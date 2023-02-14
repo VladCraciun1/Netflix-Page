@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+Symbols+2&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+Symbols+2&family=Red+Hat+Display:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100&family=Noto+Sans+Symbols+2&family=Oswald:wght@700&family=Red+Hat+Display:wght@300&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Nav Bar */
+.nav-bar {
+    color: rgb(247, 244, 244);
+    background: linear-gradient(#292828, #888a8b33);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-bar-right {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-right li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.nav-bar-right li a:hover {
+    color: rgb(157, 158, 158);
+    transition: 0.5s ease;
+}
+
+.netflix-nav {
+    padding-left: 40px;
+    font-size: 28px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(245, 12, 12);
+}
+
+.text-nav {
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.netflix-nav a {
+    color: red;
+}
+
+.text-nav a {
+    color: white;
+}
+
+.nav-bar-left {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-bar-left li a:hover {
+    color: rgb(135, 138, 138);
+    background-color: rgba(88, 70, 102, 0.966);
+    transition: background-color 0.5s ease;
+}
+
+.nav-bar-left li a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+    display: inline-block;
+    padding: 5px 10px;
+    padding-top: 10px;
+
+}
+
+.icon-left-bar i {
+    font-size: 20px;
+}
+
+.fa-caret-down {
+    padding-right: 40px;
+}
+
+.tittle-movie {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+    padding-left: 65px;
+    width: auto;
+    height: 120px;
+
+}
+
+.tittle-movie p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.tittle-movie h1 {
+    font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 35px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.flip {
+    display: inline-block;
+    transform: scale(-1, 1);
+}
+
+.button-title {
+    display: flex;
+    width: auto;
+    height: 38px;
+    padding-left: 70px;
+    margin-top: 15px;
+}
+
+.button-title :hover {
+    cursor: pointer;
+    background-color: #bdbaba;
+    transition: 0.1s;
+}
+
+.button-title button {
+    width: 200%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-title .fa {
+    font-size: 25px;
+    padding-left: 10px;
+    letter-spacing: 10px;
+}
+
+.info-button {
+    color: rgba(0, 0, 0, 0.986);
+    padding-left: 5px;
+    opacity: 0.9;
+    filter: brightness(50%);
+}
+
+.info-button p {
+    font-weight: 700;
+    color: rgb(75, 75, 75);
+}
+
+.volum-age {
+    font-size: 20px;
+    width: 95px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.age {
+    padding: 3px 10px 0 10px;
+    background-color: rgb(44, 48, 51);
+    opacity: 0.7;
+    width: 50px;
+    height: 30px;
+    padding-right: 50px;
+    border-left-style: solid;
+}
+
+.btn-vol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 20px;
+}
+
+.fa-volume-up {
+    padding-right: 10px;
+    border: 10px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+
+.page2 {
+    width: auto;
+    height: auto;
+    background-color: #292828f3;
+    padding-left: 50px;
+    overflow: hidden;
+
+}
+
+.page2 h3 {
+    color: white;
+    padding: 30px 0px 10px 0px;
+}
+
+.page2 img {
+    margin: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-movies {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    /* width: auto; */
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.top-movies p {
+    font-size: 250px;
+    padding-left: 20px;
+    margin-right: -25px;
+    margin-top: -50px;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(136, 134, 134);
+    color: transparent;
+    background-color: none;
+    -webkit-background-clip: text;
+    text-shadow: 5px 1px 1px #0c0c0c;
+    cursor: pointer;
+
+}
+
+.right-move {
+    width: 50px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    opacity: 0.9;
+
+}
+
+
+.left-move {
+    width: 50px;
+    height: 200px;
+    position: relative;
+    background-color: #3a3939;
+}
+
+
+.top-movies img {
+    width: 200px;
+    height: 202px;
+
+}
+
+.watching {
+    display: flex;
+
+}
+
+.watching img {
+    width: 250px;
+}
+
+.binge-worthy {
+    display: flex;
+    overflow-x: hidden;
+
+}
+
+.trending-now {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.new-releases {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.suspensful-movies {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.only-netflix {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.psychological {
+    display: flex;
+    overflow-x: hidden;
+}
+
+/* Pagina 3 */
+.page3 {
+    width: auto;
+    height: 60vh;
+    background-color: #292828;
+
+
+}
+
+.social-link {
+    font-size: 25px;
+    color: white;
+    padding-top: 150px;
+    padding-left: 200px;
+
+}
+
+.social-link i {
+    padding: 10px;
+    cursor: pointer;
+    width: min-content;
+}
+
+.t-page1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #818181;
+    width: 80%;
+    padding-left: 50px;
+}
+
+.t-page1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.service-code {
+    margin: 20px;
+    width: max-content;
+    height: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: #292828;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 13%;
+    cursor: pointer;
+}
+
+.service-code p {
+    padding: 3px;
+    color: #818181;
+}
